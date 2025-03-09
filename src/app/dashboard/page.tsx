@@ -284,7 +284,7 @@ export default async function Dashboard() {
   return (
     <SubscriptionCheck>
       <DashboardNavbar />
-      <main className="w-full bg-gray-50 dark:bg-gray-950 min-h-screen">
+      <main className="w-full bg-gray-50 dark:bg-black min-h-screen">
         <div className="container mx-auto px-4 py-8">
           {/* Header Section */}
           <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">

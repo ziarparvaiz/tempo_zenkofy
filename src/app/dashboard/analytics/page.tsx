@@ -200,7 +200,7 @@ export default async function AnalyticsPage() {
   return (
     <SubscriptionCheck>
       <DashboardNavbar />
-      <main className="w-full bg-gray-50 dark:bg-gray-950 min-h-screen">
+      <main className="w-full bg-gray-50 dark:bg-black min-h-screen">
         <div className="container mx-auto px-4 py-8">
           {/* Header Section */}
           <div className="flex items-center justify-between mb-8">

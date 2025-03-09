@@ -18,11 +18,11 @@ export default function DashboardNavbar() {
   const router = useRouter();
 
   return (
-    <nav className="w-full border-b border-gray-200 bg-white py-4 sticky top-0 z-50">
+    <nav className="w-full border-b border-gray-200 bg-white dark:bg-black dark:border-gray-700 py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Link
-            href="/"
+            href="/dashboard"
             prefetch
             className="text-xl font-bold flex items-center gap-2"
           >
@@ -34,21 +34,21 @@ export default function DashboardNavbar() {
         <div className="hidden md:flex items-center gap-6">
           <Link
             href="/dashboard"
-            className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors flex items-center gap-1"
+            className="text-sm font-medium text-gray-200 hover:text-blue-600 transition-colors flex items-center gap-1"
           >
             <BookOpen className="h-4 w-4" />
             <span>Library</span>
           </Link>
           <Link
             href="/dashboard/analytics"
-            className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors flex items-center gap-1"
+            className="text-sm font-medium text-gray-200 hover:text-blue-600 transition-colors flex items-center gap-1"
           >
             <BarChart4 className="h-4 w-4" />
             <span>Analytics</span>
           </Link>
           <Link
             href="/dashboard/settings"
-            className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors flex items-center gap-1"
+            className="text-sm font-medium text-gray-200 hover:text-blue-600 transition-colors flex items-center gap-1"
           >
             <Settings className="h-4 w-4" />
             <span>Settings</span>
@@ -70,7 +70,7 @@ export default function DashboardNavbar() {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="#" className="w-full">
+                <Link href="/dashboard/settings" className="w-full">
                   Account Settings
                 </Link>
               </DropdownMenuItem>
